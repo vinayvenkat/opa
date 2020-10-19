@@ -55,5 +55,5 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_NOTIFICATION_WEBHOOK }} 
         with:
           status: ${{ job.status }} 
-          fields: ${{ repo,workflow }}
+          fields: repo,workflow 
   # add any additional jobs/steps needed to test the image, push to a registry, etc.
