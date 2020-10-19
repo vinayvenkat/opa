@@ -23,7 +23,7 @@ COPY --from=certs /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certifica
 USER ${USER}
 
 ARG BIN_DIR=.
-COPY ${BIN_DIR}/opa_linux_amd64 /opa
+#COPY ${BIN_DIR}/opa_linux_amd64 /opa
 
 ENTRYPOINT ["/opa"]
 CMD ["run"]
